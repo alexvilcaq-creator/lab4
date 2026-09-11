@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.sp
 import com.example.moviecounter.ui.theme.MovieCounterTheme
 import androidx.compose.material3.Card
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.graphics.Color
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +48,14 @@ fun InfoCard(text: String) {
         Text(text = text, modifier = Modifier.padding(16.dp))
     }
 }
-
+@Composable
+fun FooterText() {
+    Text(
+        text = "Made with Jetpack Compose",
+        fontSize = 12.sp,
+        color = Color.Gray
+    )
+}
 @Composable
 fun TitleHeader() {
     Text(
