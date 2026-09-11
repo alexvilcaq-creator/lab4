@@ -10,8 +10,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.example.moviecounter.ui.theme.MovieCounterTheme
+import androidx.compose.material3.Card
+import androidx.compose.ui.unit.dp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +39,21 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
+    )
+}
+@Composable
+fun InfoCard(text: String) {
+    Card(modifier = Modifier.padding(8.dp)) {
+        Text(text = text, modifier = Modifier.padding(16.dp))
+    }
+}
+
+@Composable
+fun TitleHeader() {
+    Text(
+        text = "Movie Counter App",
+        fontSize = 24.sp,
+        fontWeight = FontWeight.Bold
     )
 }
 
