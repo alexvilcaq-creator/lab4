@@ -1,0 +1,17 @@
+[33mcommit 932fab95e55a72de2798f60e12991e5d66257071[m
+Author: Alex <alex.vilca.q@tecsup.edu.pe>
+Date:   Fri Sep 11 16:50:42 2026 -0500
+
+    feat: add InfoCard component
+
+ .idea/.gitignore                                   |  3 [32m++[m
+ .idea/AndroidProjectSystem.xml                     |  6 [32m+++[m
+ .idea/compiler.xml                                 |  6 [32m+++[m
+ .idea/deploymentTargetSelector.xml                 | 11 [32m++++[m
+ .idea/gradle.xml                                   | 17 [32m++++++[m
+ .idea/inspectionProfiles/Project_Default.xml       | 61 [32m++++++++++++++++++++++[m
+ .idea/misc.xml                                     | 10 [32m++++[m
+ .idea/runConfigurations.xml                        | 17 [32m++++++[m
+ .idea/vcs.xml                                      |  6 [32m+++[m
+ .../java/com/example/moviecounter/MainActivity.kt  | 19 [32m+++++++[m
+ 10 files changed, 156 insertions(+)

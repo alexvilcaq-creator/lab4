@@ -65,6 +65,14 @@ fun TitleHeader() {
     )
 }
 
+@Composable
+fun SubtitleText() {
+    Text(
+        text = "Track your favorite films",
+        fontSize = 14.sp
+    )
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
